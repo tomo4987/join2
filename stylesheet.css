@@ -1,0 +1,149 @@
+li {
+  list-style: none;
+}
+
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80%;
+}
+
+#page-top a {
+    display: block;
+    background: #666;
+    color: #fff;
+    width: 100px;
+    padding: 25px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#page-top a:hover {
+    background: #999;
+    text-decoration: none;
+}
+
+
+
+
+$(function () {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#wrap {
+width:100%;
+margin:0px auto;
+}
+
+header {
+
+}
+
+#sidenavi {
+float:left;
+width:30%;
+height:600px;
+
+margin:10px  10px 10px 10px;
+}
+
+#contents {
+float:right;
+width:60%;
+height:600px;
+margin:10px 10px 10px 10px;
+}
+
+footer {
+width:70%;
+margin: auto;
+clear:both;
+}
+.footer{
+background-color: black;
+margin: auto;
+}
+
+
+.footer-cont {
+  background-color: black;
+float:left;
+margin: auto;
+ color:white;
+}
+.footer{
+    display: flex;
+  }
+  .footer-cont {
+    text-align: center;
+
+  }
+
+
+
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.footer2{
+  text-align: center;
+  background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
