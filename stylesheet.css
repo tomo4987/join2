@@ -2,6 +2,19 @@ li {
   list-style: none;
 }
 
+
+
+
+body{
+
+
+}
+
+
+
+
+
+
 #page-top {
     position: fixed;
     bottom: 20px;
@@ -48,17 +61,113 @@ $(function () {
     });
 });
 
+.header{
+
+}
+
+
+
+.main1 {
+    position: relative;
+
+}
+.main2 {
+  position: absolute;
+  bottom: 80px;
+  left:300px;
+  color: black;
+  background:#CBFFD3;
+  width: 100%;
+  max-width: 600px;
+  padding: 1em 0;
+}
+
+.main2 p{
+  font-size:20px;
+      text-align: center;
+}
+
+header{
+heigth:600px;
+}
 
 
 
 
 
+ul.ddmenu { margin:10px 200px 10px 200px;
+   padding: 0px 0px 0px 0px;
+   background-color: #CBFFD3;
+}
+
+ul.ddmenu li {
+   width: 180px;
+   display: inline-block;
+   list-style-type: none;
+   position: relative;
+}
+ul.ddmenu a {
+   background-color: #CBFFD3;
+   color: black;
+   line-height: 40px;
+   text-align: center;
+   text-decoration: none;
+   font-weight: bold;
+   display: block;
+}
+ul.ddmenu a:hover {
+   background-color: #CBFFD3;
+
+}
+
+
+ul.ddmenu li:hover > ul {
+   display: block;
+}
 
 
 
 
+ul.ddmenu ul {
+   margin: 0px;
+   padding: 0px;
+   display: none;
+   position: absolute;
+}
 
 
+ul.ddmenu ul li {
+   width: 180px;
+   border-top: 1px solid #CBFFD3;
+}
+ul.ddmenu ul li a {
+   line-height: 35px;
+   text-align: center;
+   padding-left: 5px;
+   font-weight: normal;
+   color:black;
+}
+ul.ddmenu ul li a:hover {
+   background-color: #a3cff3;
+   color: black;
+}
+
+ul.ddmenu ul ul {
+   margin: 0px;
+   padding: 0px;
+   display: none;
+   position: absolute;
+   top: -1px;
+   left: 100%;
+   border-left: 1px solid #e8f3fc;
+}
+
+
+
+.header{
+   text-align: center;
+   color:black;
+}
 
 
 
@@ -67,44 +176,149 @@ $(function () {
 
 #wrap {
 width:100%;
-margin:0px auto;
-}
-
-header {
+margin:0px 0px 20px 0px auto;
 
 }
+
 
 #sidenavi {
 float:left;
 width:30%;
 height:600px;
+background-image: url(https://raw.githubusercontent.com/tomo4987/join2/master/C01005-005H.jpg);
+background-size:cover;
 
-margin:10px  10px 10px 10px;
+margin:0px 0px 0px 0px;
 }
+
+.sidenavi1 a{
+  color:#111111;
+}
+
+
+
+
+
+
+
+.sidenavi1{
+  margin:0px 0px 10px 30px;
+padding:0px 0px 10px 30px;
+}
+
+
+
+.accordion {
+    margin: 2em 0;
+    padding: 0;
+    max-width: 200px;
+}
+
+h2{
+}
+
+.accordion label {
+    display: block;
+    margin: 1.5px 0;
+    padding : 11px 12px;
+    color :black;
+    font-weight: bold;
+    background :#CBFFD3;
+    cursor :pointer;
+    transition: all 0.5s;
+}
+
+.accordion label:hover {
+    background :#85baef;
+}
+
+.accordion input {
+    display: none;
+}
+
+.accordion .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.cssacc:checked + .accshow {
+    height: auto;
+    padding: 5px;
+    background: #eaeaea;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contents1{
+  margin:0px 0px 10px 50px;
+padding:0px 0px 10px 50px;
+}
+
+
+
+
+
+
 
 #contents {
 float:right;
-width:60%;
+background-image: url(https://raw.githubusercontent.com/tomo4987/join2/master/C01010-010H.jpg);
+background-size:cover;
+width:70%;
 height:600px;
-margin:10px 10px 10px 10px;
+margin:0px 0px 0px 0px;
+}
+.contents1{
+  margin:0px 0px 10px 50px;
+padding:0px 0px 10px 50px;
+}
+main{
+  background-image: url(https://raw.githubusercontent.com/tomo4987/join2/master/C01001-008H.jpg);
+  background-size:cover;
+margin:50px 0px 0px 0px;
 }
 
 footer {
 width:70%;
+color:black;
 margin: auto;
 clear:both;
+  background-image: url(https://raw.githubusercontent.com/tomo4987/join2/master/C01007-001H.jpg);
+  background-size:cover;
+
+
 }
 .footer{
-background-color: black;
 margin: auto;
 }
 
 
 .footer-cont {
-  background-color: black;
 float:left;
 margin: auto;
- color:white;
+ color:black;
 }
 .footer{
     display: flex;
@@ -124,12 +338,39 @@ margin: auto;
 }
 
 
+
 .footer2{
   text-align: center;
-  background-color: green;
+margin:0px 0px 0px 0px;
+padding:0px 0px 5px 0px;
 }
 
 
+
+.frame {
+position: relative;
+display: inline-block;
+overflow: hidden;
+padding: 1px;
+}
+.frame:after {
+content: "";
+position: absolute;
+z-index: 1;
+width: 100px;
+height: auto;
+background: red;
+content: "New";
+text-align: center;
+color: #fff;
+font-family: 'Arial';
+font-weight: bold;
+padding: 5px 10px;
+left: -30px;
+top: 3px;
+transform: rotate(-30deg);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
 
 
 
